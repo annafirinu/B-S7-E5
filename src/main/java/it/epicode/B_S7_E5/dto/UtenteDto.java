@@ -8,6 +8,8 @@ import lombok.Data;
 public class UtenteDto {
     @NotEmpty(message = "Obbligatorio inserire nome")
     private String nome;
+    @NotEmpty(message = "Obbligatorio inserire cognome")
+    private String cognome;
     @Email(message = "Obbligatorio inserire email (indirizzo@epicode.it)")
     private String email;
     @NotEmpty(message = "Obbligatorio inserire username")

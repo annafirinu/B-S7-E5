@@ -6,7 +6,6 @@ import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
 
@@ -20,6 +19,7 @@ public class Utente implements UserDetails {
     private int id;
     private String nome;
     private String cognome;
+    private String email;
     @Column(unique = true)
     private String username;
     private String password;
