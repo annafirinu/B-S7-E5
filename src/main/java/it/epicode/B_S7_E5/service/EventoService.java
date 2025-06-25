@@ -1,7 +1,6 @@
 package it.epicode.B_S7_E5.service;
 
 import it.epicode.B_S7_E5.dto.EventoDto;
-import it.epicode.B_S7_E5.enumeration.RuoloUtente;
 import it.epicode.B_S7_E5.exception.NotFoundException;
 import it.epicode.B_S7_E5.exception.UnAuthorizedException;
 import it.epicode.B_S7_E5.model.Evento;
@@ -15,7 +14,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 
 @Service
 public class EventoService {

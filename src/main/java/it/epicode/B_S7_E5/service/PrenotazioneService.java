@@ -44,7 +44,7 @@ public class PrenotazioneService {
     }
 
     //Metodo per estrarre tutte le prenotazioni
-    public Page<Prenotazione> getAllUtenti(int page, int size, String sortBy) {
+    public Page<Prenotazione> getAllPrenotazioni(int page, int size, String sortBy) {
         Pageable pageable = PageRequest.of(page, size, Sort.by(sortBy));
         return prenotazioneRepository.findAll(pageable);
     }
